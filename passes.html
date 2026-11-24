@@ -4,101 +4,155 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoga Passes & Pricing | Yoga Loft Tampa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: system-ui, -apple-system, sans-serif; line-height: 1.5; max-width: 800px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
-    h1, h2, h3 { font-weight: 600; }
-    a { color: #9A4630; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .cta { display: inline-block; background: #9A4630; color: white; padding: 0.5rem 1rem; border-radius: 6px; margin: 0.25rem 0; }
-    .cta:hover { background: #7a3826; text-decoration: none; }
-    .offer { margin: 1.5rem 0; padding: 1rem; border-left: 3px solid #9A4630; background: #faf8f7; }
-    .price { font-size: 1.25rem; font-weight: 600; }
+    :root {
+      --bg: #f4efe6;
+      --text: #2a241c;
+      --muted: #6b635a;
+      --terracotta: #9A4630;
+      --terracotta-hover: #7a3826;
+      --surface: #fcfaf6;
+      --border: #e8e0d4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header { margin-bottom: 2rem; }
+    h1 { font-size: 2.25rem; font-weight: 600; margin: 0 0 0.5rem; letter-spacing: -0.02em; }
+    h2 { font-size: 1.5rem; font-weight: 600; margin: 2rem 0 0.75rem; }
+    h3 { font-size: 1.15rem; font-weight: 600; margin: 1.5rem 0 0.4rem; }
+    p { margin: 0.5rem 0; }
+    .muted { color: var(--muted); }
+    .cta {
+      display: inline-block;
+      background: var(--terracotta);
+      color: #fcfaf6;
+      padding: 0.65rem 1.25rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin: 0.4rem 0.4rem 0.4rem 0;
+      transition: background 0.15s ease;
+    }
+    .cta:hover { background: var(--terracotta-hover); }
+    .offer {
+      background: var(--surface);
+      border-left: 4px solid var(--terracotta);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.5rem 0;
+    }
+    .price { font-weight: 600; }
+    section { margin: 2rem 0; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    nav a { color: var(--muted); text-decoration: none; margin-right: 1rem; }
+    nav a:hover { color: var(--text); }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Yoga Passes & Pricing in Ybor City</h1>
-    <p><strong>Yoga Loft Tampa</strong> · Home of Chicken Yoga</p>
-  </header>
+  <div class="wrap">
+    <header>
+      <h1>Yoga Passes & Pricing in Ybor City</h1>
+      <p><strong>Yoga Loft Tampa</strong> · Home of Chicken Yoga</p>
+    </header>
 
-  <section>
-    <h2>Book and pay in Mindbody.</h2>
-    <p>Classes, intro packs, aerial, merch, and teacher training checkout on Mindbody — the same system the loft already uses.</p>
-    <p><a class="cta" href="https://go.mindbodyonline.com/book/widgets/schedules/view/b527042ba7d/schedule">Open class schedule</a></p>
-  </section>
+    <section>
+      <h2>Book and pay in Mindbody.</h2>
+      <p>Classes, intro packs, aerial, merch, and teacher training checkout on Mindbody — the same system the loft already uses.</p>
+      <p><a class="cta" href="https://go.mindbodyonline.com/book/widgets/schedules/view/b527042ba7d/schedule">Open class schedule</a></p>
+    </section>
 
-  <section class="offer">
-    <p><strong>Friday, November 27</strong></p>
-    <h2>Black Friday at the loft.</h2>
-    <p>The sale opens Friday, November 27. Four things, and that is the whole list.</p>
+    <section class="offer">
+      <p class="muted"><strong>Friday, November 27</strong></p>
+      <h2>Black Friday at the loft.</h2>
+      <p>The sale opens Friday, November 27. Four things, and that is the whole list.</p>
 
-    <div>
-      <h3>Mega class pack</h3>
-      <p>A bigger pack than the usual 10. More classes, one checkout.</p>
-      <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/po_11kUk8ZLBVNWfEgSn6?mbo_src=po-mgmt-copy-link">Get the Mega class pack →</a>
-    </div>
+      <div>
+        <h3>Mega class pack</h3>
+        <p>A bigger pack than the usual 10. More classes, one checkout.</p>
+        <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/po_11kUk8ZLBVNWfEgSn6?mbo_src=po-mgmt-copy-link">Get the Mega class pack →</a>
+      </div>
 
-    <div>
-      <h3>Teacher training deposit</h3>
-      <p>A Black Friday cut on the 2027 200-hour cohort.</p>
-      <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/po_11kUk8ZLBVNWfEgRQk?mbo_src=po-mgmt-copy-link">Teacher training deposit →</a>
-    </div>
+      <div>
+        <h3>Teacher training deposit</h3>
+        <p>A Black Friday cut on the 2027 200-hour cohort.</p>
+        <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/po_11kUk8ZLBVNWfEgRQk?mbo_src=po-mgmt-copy-link">Teacher training deposit →</a>
+      </div>
 
-    <div>
-      <h3>Membership discounts</h3>
-      <p>The monthly and unlimited options, marked down for the weekend.</p>
-      <p>
-        <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=119">Yoga membership →</a>
-        <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=120">Aerial membership →</a>
-      </p>
-    </div>
+      <div>
+        <h3>Membership discounts</h3>
+        <p>The monthly and unlimited options, marked down for the weekend.</p>
+        <p>
+          <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=119">Yoga membership →</a>
+          <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=120">Aerial membership →</a>
+        </p>
+      </div>
 
-    <div>
-      <h3>A perk for current members</h3>
-      <p>If you already train here, you get something the new list does not.</p>
-      <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/cntr_11kUk8ZLBVNWfEAic9?mbo_src=contracts-page">Current members perk →</a>
-    </div>
+      <div>
+        <h3>A perk for current members</h3>
+        <p>If you already train here, you get something the new list does not.</p>
+        <a class="cta" href="https://go.mindbodyonline.com/book/app/pricing/bus_11kUk8ZLBVNWfjcZyc/cntr_11kUk8ZLBVNWfEAic9?mbo_src=contracts-page">Current members perk →</a>
+      </div>
 
-    <div>
-      <h3>Aerial add-on</h3>
-      <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=121">Aerial add-on →</a>
-    </div>
-  </section>
+      <div>
+        <h3>Aerial add-on</h3>
+        <a class="cta" href="https://clients.mindbodyonline.com/classic/ws?studioid=5745332&stype=40&prodId=121">Aerial add-on →</a>
+      </div>
+    </section>
 
-  <section>
-    <h2>Mat classes</h2>
-    <p><span class="price">Drop-in $20</span> — Any open mat class</p>
-    <p><span class="price">Intro · 14 days $49</span> — New students, unlimited</p>
-    <p><span class="price">10-pack $180</span> — $18 a class, no expiry rush</p>
-    <p><span class="price">8 classes / month · 12 mo $100</span> — 12-month contract</p>
-    <p><span class="price">8 classes / month · 3 mo $120</span> — 3-month contract</p>
-    <p><span class="price">Unlimited · 12 mo $130</span> — 12-month contract</p>
-    <p><span class="price">Unlimited · 3 mo $150</span> — 3-month contract</p>
-  </section>
+    <section>
+      <h2>Mat classes</h2>
+      <p><span class="price">Drop-in $20</span> — Any open mat class</p>
+      <p><span class="price">Intro · 14 days $49</span> — New students, unlimited</p>
+      <p><span class="price">10-pack $180</span> — $18 a class, no expiry rush</p>
+      <p><span class="price">8 classes / month · 12 mo $100</span> — 12-month contract</p>
+      <p><span class="price">8 classes / month · 3 mo $120</span> — 3-month contract</p>
+      <p><span class="price">Unlimited · 12 mo $130</span> — 12-month contract</p>
+      <p><span class="price">Unlimited · 3 mo $150</span> — 3-month contract</p>
+    </section>
 
-  <section>
-    <h2>Aerial</h2>
-    <p><span class="price">Intro to Aerial · 3 classes $49</span></p>
-    <p><span class="price">Aerial drop-in $35</span></p>
-    <p><span class="price">Aerial 10-pack $300</span></p>
-    <p><span class="price">Aerial 8× month · 12 mo $160</span></p>
-    <p><span class="price">Aerial 8× month · 3 mo $180</span></p>
-  </section>
+    <section>
+      <h2>Aerial</h2>
+      <p><span class="price">Intro to Aerial · 3 classes $49</span></p>
+      <p><span class="price">Aerial drop-in $35</span></p>
+      <p><span class="price">Aerial 10-pack $300</span></p>
+      <p><span class="price">Aerial 8× month · 12 mo $160</span></p>
+      <p><span class="price">Aerial 8× month · 3 mo $180</span></p>
+    </section>
 
-  <section>
-    <h2>Private aerial parties</h2>
-    <p>Starts at $500 for the session. $100 deposit holds the date. Both are on Mindbody.</p>
-  </section>
+    <section>
+      <h2>Private aerial parties</h2>
+      <p>Starts at $500 for the session. $100 deposit holds the date. Both are on Mindbody.</p>
+    </section>
 
-  <section>
-    <h2>Merch</h2>
-    <p>Tees and headbands checkout on Mindbody. Pick the item, choose a size, pay there.</p>
-    <p>Yoga Loft tee $35 · Yoga Loft headband $12 · Chicken Yoga tee $40</p>
-  </section>
+    <section>
+      <h2>Merch</h2>
+      <p>Tees and headbands checkout on Mindbody. Pick the item, choose a size, pay there.</p>
+      <p>Yoga Loft tee $35 · Yoga Loft headband $12 · Chicken Yoga tee $40</p>
+    </section>
 
-  <footer>
-    <p>Yoga Loft Tampa · Home of Chicken Yoga · since 2007<br>
-    2002 E 5th Ave, Suite 102, Tampa, FL 33605 · Historic Ybor City</p>
-  </footer>
+    <footer>
+      <p><strong>Yoga Loft Tampa</strong> · Home of Chicken Yoga · since 2007<br>
+      2002 E 5th Ave, Suite 102, Tampa, FL 33605 · Historic Ybor City</p>
+      <p class="muted">Women-owned · LGBTQ+ and neurodiverse-friendly</p>
+    </footer>
+  </div>
 </body>
 </html>
